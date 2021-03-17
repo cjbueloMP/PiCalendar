@@ -2,7 +2,7 @@
 # PiCalendar
 
 <img src="https://i.imgur.com/L3OlWdY.png" width="376">
-PiCalendar displays upcoming events in a simple webpage, with colors denoting whether the event is today (red), tomorrow (yellow), or after that but within 2 weeks, green).
+PiCalendar displays upcoming events in a simple webpage, with colors denoting whether the event is today (red), tomorrow (yellow), or after that but within 2 weeks (green).
 
 This project was an intro to Flask and html/css
 
