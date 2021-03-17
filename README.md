@@ -10,7 +10,7 @@ To set it up follow the instructions on the o365 python module: https://pypi.org
 Once the API is set up, add your credentials to app/creds.py in the form of
 
 '''
-CLIENT_ID = 'YOUR_CLIENT_ID'
+CLIENT_ID = 'YOUR_CLIENT_ID'\n
 SECRET_ID = 'YOUR_SECRET_ID'
 '''
 
