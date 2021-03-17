@@ -16,8 +16,8 @@ SECRET_ID = 'YOUR_SECRET_ID'
 
 and run authentication.py to create a token.
 
-The page auto-refreshes every hour to load new events.
-
 Use `export FLASK_APP=PiCalendar.py` to point flask to your app, then do `flask run` to run the calendar. Go to localhost:5000 to see your webpage!
+
+The page auto-refreshes every hour to get rid of old events and load new events.
 
 The webpage looks great on the official 7" raspberry pi touchscreen, other display sizes might need adjusting of the sizes of things.
