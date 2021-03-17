@@ -1,4 +1,3 @@
-# calendarapp
 # PiCalendar
 
 <img src="https://i.imgur.com/L3OlWdY.png" width="376">
