@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+    {% for event in events %}
+    <div class="row">
+        <div class="col-sm-2">
+            <div>
+                <div class="rectangle {{ event.color }}-rectangle"></div><span style="color:white;font-family:arial;font-size:35px" >&nbsp;{{ event.hourminute }} : {{ event.subject }}</span>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+{% endblock %}

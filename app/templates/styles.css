@@ -1,0 +1,12 @@
+.rectangle {
+    width:10px;
+    height:10px;
+    font-size:20px;
+    color:#fff;
+    line-height:100px;
+    background: green;
+    display: inline-block;
+}
+.red-rectangle {
+    background: red;
+}

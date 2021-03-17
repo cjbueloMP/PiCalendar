@@ -1,0 +1,17 @@
+{
+ "token_type": "Bearer",
+ "scope": [
+  "Calendars.Read",
+  "Calendars.Read.Shared",
+  "openid",
+  "profile",
+  "User.Read",
+  "User.ReadBasic.All",
+  "email"
+ ],
+ "expires_in": 3599,
+ "ext_expires_in": 3599,
+ "access_token": "test_token",
+ "refresh_token": "test_refresh",
+ "expires_at": 1616007330.1358612
+}
