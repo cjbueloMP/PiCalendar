@@ -1,12 +1,14 @@
 {% extends "base.html" %}
+
 {% block content %}
+<table class="wp-table">
     {% for event in events %}
-    <div class="row">
-        <div class="col-sm-2">
-            <div>
-                <div class="rectangle {{ event.color }}-rectangle"></div><span style="color:white;font-family:arial;font-size:35px" >&nbsp;{{ event.hourminute }} : {{ event.subject }}</span>
-            </div>
-        </div>
-    </div>
+    <tr>
+        <td class="rectangle {{ event.color }}-rectangle"></td>
+        <td width="2px" />
+        <td class="alignRight" style="color:white;font-family:arial;font-size:35px;align:right;" >{{ event.hourminute }}</td>
+        <td style="color:white;font-family:arial;font-size:35px;">: {{ event.subject }}</td>
+    </tr>
     {% endfor %}
+</table>
 {% endblock %}
