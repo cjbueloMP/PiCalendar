@@ -22,6 +22,8 @@ def parse_event_string(event):
     hourminute = fulltime.strftime("%-I:%M %p")
     hourminute = '{:>8}'.format(hourminute)
     subject = event_string[subject_start:subject_index]
+    if len(subject)>30:
+        subject = subject[0:30] + '...'
     color = set_color(fulltime)
     return {'subject':subject, 'start_time':fulltime, 'hourminute':hourminute,'color':color}
 
@@ -46,18 +48,15 @@ def get_events():
     #events = calendar.get_events(include_recurring=False) 
     events = calendar.get_events(query=q, include_recurring=True) 
     
-    eventlist = []
-    numevents = 11
-    i=0
+    unsorted = []
+    numevents = 10
     for event in events:
-        i+=1
-        if i==numevents:
-            break
         event = parse_event_string(event)
-        eventlist.append(event)
+        unsorted.append(event)
     
     
-    eventlist = sorted(eventlist, key=lambda start: start['start_time'])
+    sortedlist = sorted(unsorted, key=lambda start: start['start_time'])
+    eventlist = sortedlist[0:numevents]
     return eventlist
 
 
